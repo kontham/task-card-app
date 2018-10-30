@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { Task } from './model/task';
+
 @Component({
     moduleId: module.id,
     selector: 'my-app',
@@ -7,5 +9,14 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent { 
-
+    private tasks = [
+        new Task (
+            "buy a monkey",
+            false
+        ),
+        new Task (
+            "walk the turtle",
+            false
+        )
+    ]
 }
