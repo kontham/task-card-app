@@ -1,5 +1,5 @@
 <div class="container">
-    <app-card [task]="task1">
+    <app-card *ngFor="let task of tasks" [task]="task">
 
     </app-card>
 </div>
